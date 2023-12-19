@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <header> <!-- banner of the web page -->
+      <nav>
+        <!-- navigation -->
+        <a href="index.html"> HOME </a> 
+        <a href="form.html"> REGISTER </a> 
+      </nav>
+      </header> 
+      
+      <figure>
+        <!-- used for img, audio, video -->
+        <img src="logo.png" alt="Alt School Logo" title="Alt School Logo" />
+      </figure>
+    
+    <h1>Application Form</h1>
+    <h4>Fill in your details</h4>
+
+    <!-- section of the page -->
+    <section>
+      <!-- form with attributes - action, method; form controls- label, input -->
+        <form action="/submit" method="get">
+        <div> 
+          <label for="firstname"> First Name: </label> 
+          <input type="text" id="first" name="first name" placeholder="Enter first name" minlength="3" maxlength = "20" required /> 
+
+          <label> Middle Name: </label> 
+          <input type="text" id = "middle" placeholder="Enter middle name" minlength= "3" maxlength = "20" required /> 
+  
+          <label> Last Name: </label> 
+          <input type="text" id="last" placeholder="Enter last name" minlength= "3" maxlength = "20" required /> <br />
+          <br /> 
+        </div>
+          
+
+          <div> 
+            <label> Gender: </label> 
+            <select>
+              <option value=" ">Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select> 
+    
+            <label> Date of Birth: </label> 
+            <input type="date" required /> <br> <br>
+          </div>
+          
+
+          <div> 
+            <label> Email Address: </label> 
+            <input type="email" placeholder="Enter email address" required /> 
+  
+            <label> Phone number: </label>
+            <select>
+              <option value=" "> +234 </option> 
+              <option value="+1"> +1 </option>
+            <input type="text" placeholder="Enter phone number" required /> <br />
+            <br /> 
+          </div>
+          
+
+          <div> 
+          <label> Country: </label> 
+            <select>
+              <option value=" " > Select your country</option>
+              <option value="nigeria"> Nigeria </option>
+              <option value="united states"> United States </option>
+            </select>
+    
+            <label> State/City of Residence: </label> 
+            <input type="text" placeholder="Enter your state of residence" minlength = "15" maxlength="40" required /> <br /> <br>
+           </div>
+
+
+           <div> 
+            <label> Education Level: </label> 
+            <select>
+              <option value=" " > Select level of education</option>
+              <option value="primary">Primary</option>
+              <option value="tertiary">Tertiary</option>
+            </select> 
+  
+            <label> Employment Status: </label> 
+            <select>
+              <option value=" "> Select employment status </option>
+              <option value="employed">Employed</option>
+              <option value="student">Student</option>
+              <option value="unemployed">Unemployed</option>
+            </select> <br> <br> 
+          </div>
+           
+  
+          
+
+          <label> Username: </label>
+          <input type="text" placeholder="Enter your username"  required /> <br> <br>
+
+          <label> Password: </label> 
+          <input type="password" id = "password" placeholder="Enter password" minlength= "7" maxlength="15" required /> <br />
+          <br />
+
+          <label> Confirm Password: </label> 
+          <input type="password" placeholder="Repeat password" minlength= "7" required /> <br />
+          <br />
+
+          <div> 
+            <label> Choose School: </label> 
+            <select>
+              <option value=" "> Select school </option>
+              <option value="school of engineering"> School of Engineering </option>
+              <option value="school of engineering"> School of Data </option>
+              <option value="school of engineering"> School of Product </option>
+            </select> 
+    
+            <label> Choose Course of Study: </label> 
+            <select>
+              <option value=" "> Select course </option>
+              <option value="front-end"> Frontend Engineering </option>
+              <option value="back-end"> Backend Engineering </option>
+              <option value="cloud"> Cloud Engineering </option>
+              <option value="data science"> Data Science </option>
+              <option value="product design"> Product Design </option>
+            </select> <br> <br>
+          </div>
+          
+          <div> 
+            <label> How did you hear about us?: </label> 
+            <select>
+              <option value=" "> Select channel </option>
+              <option value="social media"> Social Media </option>
+              <option value="radio"> Radio </option>
+            </select> 
+    
+            <label> Scholarship/Discount Code (optional): </label> 
+            <input type="text" placeholder="Scholarship or student ID or... " required /> <br />
+            <br /> 
+          </div>
+            
+
+        <p> By clicking continue, I agree to <a href=" "> Terms of Use </a> and acknowledge <br>
+        that I <br>
+    have read the <a href=" "> Privacy Policy</a> . </p>
+    <button type="submit"> Proceed </button>    
+      </form>
+    </section>
+
+    <footer> 
+      <!-- content info -->
+      <p> Already have an account? <a href=" "> Sign In </a></p>
+    </footer>  
+  </body>
+</html>
